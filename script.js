@@ -202,7 +202,6 @@ Software Processes and Agile Practices</a>
 
                 <a href="https://www.linkedin.com/in/ayoub-el-baraka-10b429227/" target="_blank" ><button class="button-ins" role="button">LinkedIn</button></a>
                 <a href="https://www.instagram.com/ayoub_o_0/" target="_blank" ><button class="button-ins" role="button">Instagram</button></a>
-                <a href="https://www.instagram.com/ayoub_o_0/" target="_blank" ><button class="button-ins" role="button">Instagram</button></a>
                 <button class="button-ins" onclick="copyText()">Copy Email</button>
                 <div class="copied-message"></div>
 
