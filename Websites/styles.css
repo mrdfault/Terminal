@@ -5,7 +5,27 @@
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
 }
+.button-ins {
+  background-color: #1e1e1e; /* Dark background */
+  color: #00ff00; /* Green text */
+  border: 2px solid #00ff00; /* Green border */
+  padding: 10px 20px; /* Padding for the button */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
+  font-size: 16px; /* Font size */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline block for button */
+  transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
 
+.button-ins:hover {
+  background-color: #00ff00; /* Change background on hover */
+  color: #1e1e1e; /* Change text color on hover */
+}
+.copied-message {
+  display: none;
+  color: green;
+  font-size: 14px;
+}
 body {
   background-color: #2b2b2b;
   display: flex;
@@ -13,12 +33,30 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+
+}
+.cert{
+
+  color: #00ff00;
 }
 
+.lnk{
+background-color: #00ff00;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 1px;
+font-size: larger;
+font-weight: bold;
+border-radius: 20px;
+text-align: center;
+padding-top: 1px;
+box-shadow: 50 5 0 #FFFFFF;
+
+}
 .terminal {
   background-color: #1e1e1e;
-  width: 800px;
-  height: 600px;
+  width: 1000px;
+  height: 700px;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -64,7 +102,7 @@ body {
   background-color: black;
   color: white;
   padding: 10px;
-  height: 600px;
+  height: 700px;
   overflow-y: scroll;
   border: 1px solid #333;
   display: flex;
@@ -110,7 +148,17 @@ body {
   margin-right: 10px;
   color: #00ff00;
 }
-
+.ttl{
+  color: #00ff00;
+ font-weight: bold;
+ 
+}
+.dt{
+  color: rgb(0, 170, 170); 
+}
+.sbt{
+  color: cyan;
+}
 input[type="text"] {
   background-color: transparent;
   border: none;
