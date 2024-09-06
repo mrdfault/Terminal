@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
 }
+
 .button-ins {
   background-color: #1e1e1e; /* Dark background */
   color: #00ff00; /* Green text */
@@ -21,11 +22,13 @@
   background-color: #00ff00; /* Change background on hover */
   color: #1e1e1e; /* Change text color on hover */
 }
+
 .copied-message {
   display: none;
   color: green;
   font-size: 14px;
 }
+
 body {
   background-color: #2b2b2b;
   display: flex;
@@ -33,26 +36,24 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-
 }
-.cert{
 
+.cert {
   color: #00ff00;
 }
 
-.lnk{
-background-color: #00ff00;
-padding-left: 5px;
-padding-right: 5px;
-padding-top: 1px;
-font-size: larger;
-font-weight: bold;
-border-radius: 20px;
-text-align: center;
-padding-top: 1px;
-box-shadow: 50 5 0 #FFFFFF;
-
+.lnk {
+  background-color: #00ff00;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 50 5 0 #FFFFFF;
 }
+
 .terminal {
   background-color: #1e1e1e;
   width: 1000px;
@@ -62,6 +63,7 @@ box-shadow: 50 5 0 #FFFFFF;
   display: flex;
   flex-direction: column;
   color: #fff; /* Default color for the terminal to white */
+  overflow: hidden; /* Avoid content overflow */
 }
 
 .terminal-header {
@@ -102,8 +104,8 @@ box-shadow: 50 5 0 #FFFFFF;
   background-color: black;
   color: white;
   padding: 10px;
-  height: 700px;
-  overflow-y: scroll;
+  height: calc(100% - 50px); /* Take the full height minus the header */
+  overflow-y: auto; /* Allow scrolling */
   border: 1px solid #333;
   display: flex;
   flex-direction: column;
@@ -148,17 +150,20 @@ box-shadow: 50 5 0 #FFFFFF;
   margin-right: 10px;
   color: #00ff00;
 }
-.ttl{
+
+.ttl {
   color: #00ff00;
- font-weight: bold;
- 
+  font-weight: bold;
 }
-.dt{
+
+.dt {
   color: rgb(0, 170, 170); 
 }
-.sbt{
+
+.sbt {
   color: cyan;
 }
+
 input[type="text"] {
   background-color: transparent;
   border: none;
@@ -170,4 +175,89 @@ input[type="text"] {
 
 input[type="text"]::placeholder {
   color: #777;
+}
+
+/* Media query for screens smaller than 768px (mobile screens) */
+@media only screen and (max-width: 768px) {
+    .terminal {
+        width: 100vw; /* Use the full screen width */
+        height: 85vh; /* Use most of the screen height */
+    }
+
+    .terminal-body {
+        height: calc(100% - 40px); /* Adjust height for the terminal body */
+        padding: 5px; /* Reduce padding */
+    }
+
+    /* Make sure buttons are not too small on mobile */
+    .terminal-header {
+        padding: 5px; /* Reduce padding */
+    }
+
+    .terminal-button {
+        width: 10px; /* Adjust button size */
+        height: 10px;
+    }
+
+    .button-ins {
+        font-size: 14px; /* Reduce button text size */
+        padding: 8px 16px; /* Adjust padding for buttons */
+    }
+
+    /* Adjust the font sizes */
+    .terminal-title {
+        font-size: 0.8rem; /* Reduce font size for the title */
+    }
+
+    .ascii-art {
+        font-size: 0.7rem; /* Scale down ASCII art */
+    }
+
+    input[type="text"] {
+        font-size: 0.9rem; /* Reduce font size for input */
+    }
+
+    /* Resize table for smaller screens */
+    .info-table {
+        font-size: 0.8rem; /* Reduce table font size */
+    }
+
+    .cert {
+        font-size: 0.8rem; /* Resize certificate links */
+    }
+
+    /* Adjust copied message for mobile */
+    .copied-message {
+        font-size: 12px;
+    }
+}
+
+/* Media query for even smaller screens (max-width 480px) */
+@media only screen and (max-width: 480px) {
+    .terminal {
+        width: 100vw; /* Full width */
+        height: 90vh; /* Adjust height */
+    }
+
+    .terminal-body {
+        height: calc(100% - 40px); /* Make sure terminal body fits within screen */
+        padding: 5px; /* Adjust padding */
+    }
+
+    .ascii-art {
+        font-size: 0.6rem; /* Further scale down ASCII art */
+    }
+
+    .button-ins {
+        font-size: 12px; /* Further reduce button text size */
+        padding: 6px 12px; /* Reduce padding */
+    }
+
+    .terminal-header {
+        padding: 5px; /* Reduce header padding */
+    }
+
+    .terminal-title {
+        font-size: 0.7rem; /* Further reduce terminal title size */
+    }
 }
