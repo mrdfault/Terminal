@@ -1,0 +1,173 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+.button-ins {
+  background-color: #1e1e1e; /* Dark background */
+  color: #00ff00; /* Green text */
+  border: 2px solid #00ff00; /* Green border */
+  padding: 10px 20px; /* Padding for the button */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
+  font-size: 16px; /* Font size */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline block for button */
+  transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
+
+.button-ins:hover {
+  background-color: #00ff00; /* Change background on hover */
+  color: #1e1e1e; /* Change text color on hover */
+}
+.copied-message {
+  display: none;
+  color: green;
+  font-size: 14px;
+}
+body {
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+}
+.cert{
+
+  color: #00ff00;
+}
+
+.lnk{
+background-color: #00ff00;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 1px;
+font-size: larger;
+font-weight: bold;
+border-radius: 20px;
+text-align: center;
+padding-top: 1px;
+box-shadow: 50 5 0 #FFFFFF;
+
+}
+.terminal {
+  background-color: #1e1e1e;
+  width: 1000px;
+  height: 700px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  color: #fff; /* Default color for the terminal to white */
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px 5px 0 0;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.close {
+  background-color: #ff5f56;
+}
+
+.minimize {
+  background-color: #ffbd2e;
+}
+
+.maximize {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.terminal-body {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  height: 700px;
+  overflow-y: scroll;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.terminal-output p {
+  margin: 0;
+}
+
+.ascii-art {
+  color: red; /* Set the color of the ASCII art to red */
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff; /* Text color */
+}
+
+.info-table th, .info-table td {
+  border: 1px solid #fff; /* Border color */
+  padding: 8px;
+  text-align: left;
+}
+
+.info-table th {
+  background-color: #333; /* Header background color */
+  color: #fff; /* Header text color */
+}
+
+.info-table td {
+  background-color: #222; /* Row background color */
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+}
+
+.terminal-prompt {
+  margin-right: 10px;
+  color: #00ff00;
+}
+.ttl{
+  color: #00ff00;
+ font-weight: bold;
+ 
+}
+.dt{
+  color: rgb(0, 170, 170); 
+}
+.sbt{
+  color: cyan;
+}
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+  color: #777;
+}
